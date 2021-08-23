@@ -1,0 +1,196 @@
+*{/*pega todos os elementos*/
+    margin: 0;/*tamanho da margem*/
+    padding: 0;/*preenchimento na altura*/
+    /*resetando todas as propriedades padrões do navegador*/
+    box-sizing: border-box;/*As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin*/
+    font-family: "Open Sans" ;/*tipo da fonte*/
+}
+html, body{
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+}
+@font-face {
+    font-family: "Open Sans" ;/*tipo da fonte*/
+    src: url('../fonts/fonts/OpenSans-Light.ttf');/*link da fonte*/
+}
+.center{
+    max-width: 1280px;/*tamnaho máximo do elemento*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    margin: 0 auto;/*espaçamento na largura do lado de fora do elementos,auto centraliza a div*/
+}
+.header{
+    padding: 0 2%;/*em cima/baixo 0, direita/esquerdar 2*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 60px ;/*determina a altura da área do conteúdo de um elemento*/
+    background-color: #212343;
+}
+.header img{
+    margin: 19px;/*tamanho da margem*/
+}
+.container-banner{
+    padding: 0 2%;/*em cima/baixo 0, direita/esquerdar 2*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 557px;/*determina a altura da área do conteúdo de um elemento*/
+    background-image: url('../img/header_bg.png');
+    background-size: cover;/*cobrir imagem de fundo*/
+    background-position: center;/*centraliza a imagem*/
+}
+.container-banner > .center{/*chamar a classe .center*/
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+    
+}
+.form{
+    padding: 10px;/*preenchimento na altura*/
+    width: 400px;/*determina a largura da área de conteúdo de um elemento*/
+    height: calc(100% + 30px);/*calc: calcular porcentagem junto com px, determina a altura da área do conteúdo de um elemento*/
+    background-color: white;/*cor de fundo*/
+    float: right;/*O elemento flutua à direita de seu contêiner*/
+    position: relative;/*está posicionado em relação à sua posição normal.*/
+    top: -15px;/*é para ajustar um elemento com o uso de position propriedade.Além disso, o top comportamento pode ser diferente dependendo do tipo de posição absolute, relativeou fixed.*/
+    border-width: 12px;/*propriedade especifica a largura das quatro bordas.*/
+    border-color: rgba(120,120,120,0.5);/*cor da bordar*/
+    border-style: solid;/*formar da bordar*/
+    background-clip: padding-box;/*deixar a bordar transparente*/
+    
+}
+.form h2{
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+    color: #999999;/*cor da fonte*/
+    font-size: 21px;/*tamanho da fonte*/
+}
+.input-container{
+    margin-top: 20px;/*margem a cima/superior*/
+}
+.input-container span{
+    display: inline-block;/*Um bloco inline é colocado inline (ou seja, na mesma linha do outro bloco), colocando o bloco na mesma linha*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    font-size: 17px;/*tamanho da fonte*/
+    color: #bbbbbb;/*cor da fonte*/
+   
+}
+.input-container input[type=text]{
+    width: 344px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 55px;/*determina a altura da área do conteúdo de um elemento*/
+    border: 1px solid #ccc;/*tamanho, forma e cor da bordar*/
+    margin-top: 8px;/*margem a cima/superior*/
+}
+.input-container input[type=email]{
+    width: 344px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 55px;/*determina a altura da área do conteúdo de um elemento*/
+    border: 1px solid #ccc;/*tamanho, forma e cor da bordar*/
+    margin-top: 8px;/*margem a cima/superior*/
+}
+.input-container input[type=number]{
+    width: 344px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 55px;/*determina a altura da área do conteúdo de um elemento*/
+    border: 1px solid #ccc;/*tamanho, forma e cor da bordar*/
+    margin-top: 8px;/*margem a cima/superior*/
+}
+.form input[type=submit]{
+    width: 280px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 56px;/*determina a altura da área do conteúdo de um elemento*/
+    background-color: #363A6D;/*cor do fundo*/
+    color: white;/*cor da fonte*/
+    border: 1px solid #ccc;/*tamanho, forma e cor da bordar*/
+    margin-top: 8px;/*margem a cima/superior*/
+    text-align: center;/*alinhar o texto ao centro*/
+    display: inline-block;/*Um bloco inline é colocado inline (ou seja, na mesma linha do outro bloco), colocando o bloco na mesma linha*/
+    font-size: 25px;/*tamanho da fonte*/
+    border-bottom: 5px solid #4A5097;/*bordar inferior*/
+    cursor: pointer;/*cursor com o formato da mão*/
+}
+.form .input-submit-container{
+     text-align: center;/*alinhar o texto ao centro*/
+}
+.form input[type=submit]:hover{/*quando o cursor clicar no elemento vai mudar de cor*/
+    background-color: #323665;
+}
+.atencao{
+    margin-top: 8px;/*margem a cima/superior*/
+    color: red;/*cor da fonte*/
+    font-size: 17px;/*tamanho da fonte*/
+}
+.container-single:last-child{
+    margin-right: 0;/*Define a margem direita de um elemento */
+}
+.container-lista{
+    padding: 30px;/*preenchimento na altura*/
+    float: left;/*div vai flutuar a esquerda*/
+    width: 519px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 270px;/*determina a altura da área do conteúdo de um elemento*/
+    background-color: rgba(33,35,67,0.7);/*cor de fundo*/
+    margin-top: 100px;/*margem a cima/superior*/
+}
+.container-lista ul{
+    list-style-position: inside;/*colocar a lista dentro da div*/
+}
+.container-lista ul li{
+    color: white;/*cor da fonte*/
+    margin-top: 18px;/*margem a cima/superior*/
+}
+.container-2{
+    padding: 40px 2%;/*preenchimento na altura*/
+    background-color: #DDDDDD;
+    text-align: center;/*centralizar o conteudo*/
+}
+.container-2 h2{
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+}
+.container-2 p{
+    max-width: 768px;/*máximo do elemento*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    display: inline-block;/*Um bloco inline é colocado inline (ou seja, na mesma linha do outro bloco), colocando o bloco na mesma linha*/
+    text-align: justify;/*texto justificado*/
+    margin: 15px 0;/*margem cima/baixo de 15, direita/esquerda 0*/
+}
+.arrow{
+    position: relative;/*está posicionado em relação à sua posição normal.*/
+    top: 60px;/*é para ajustar um elemento com o uso de position propriedade.Além disso, o top comportamento pode ser diferente dependendo do tipo de posição absolute, relativeou fixed.PARA QUE A IMAGEM FIQUE METADE PRA DENTRO, METADE PRA FORA DA DIV*/
+    left: 50%;/*colocar o elemento 50% a esquerda*/
+    margin-left: -20px;/*Define a margem esquerda de um elemento */
+    width: 40px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 40px;/*determina a altura da área do conteúdo de um elemento*/
+    background-image: url('../img/arrow.png');
+    background-size: 100% 100%;/*tamanho da imagem, 100% de altura 100% largura*/
+}
+.section-1{
+    padding: 90px 2%;/*preenchimento na altura, 90 cima/baixo 2 esquerda/direita*/
+}
+.section-1 h2{
+    text-align: center;/*alinhar o texto no centro*/
+    color: #462663;/*cor da fonte*/
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+}
+.container-section{
+    margin-top: 40px;/*margem a cima/superior*/
+    text-align: center;/*centralizar o texto no meio da div*/
+}
+.container-single{
+    float: left;/*div vai flutuar a esquerda*/
+    width: 33.333%;/*determina a largura da área de conteúdo de um elemento*/
+    padding: 30px;/*preenchimento na altura*/
+}
+.container-single p{
+    padding: 10px 25px;/*preenchimento na altura, 90 cima/baixo 0 esquerda/direita*/
+    text-align: justify;/*texto justificado*/
+}
+.container-single img{
+    width: 70px;/*determina a largura da área de conteúdo de um elemento*/
+}
+.footer{
+    clear: both;/*É uma palavra-chave que indica que o elemento será movido para baixo para limpar os elementos flutuantes do lado esquerdo e direito.*/
+    border-top: 2px solid #888888;/*bordar superior/tamanho, forma e cor*/
+    padding: 20px 0;/*preenchimento na altura, 30 cima/baixo 0 esquerda/direita*/
+    text-align: center;/*centralizar o texto no meio*/
+    color: #888;/*cor da fonte*/
+}
+.footer p{
+    margin-top: 8px;/*margem a cima/superior*/
+}
+@media screen and (max-width: 1024px) {
+    .header{
+        padding: 30px 2%;/*em cima/baixo 30, direita/esquerdar 2*/
+        width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+        height: auto ;/*determina a altura da área do conteúdo de um elemento*/
+        background-color: #212343;
+    }
+}
